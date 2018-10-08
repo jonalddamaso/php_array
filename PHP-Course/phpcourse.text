@@ -1,0 +1,48 @@
+Application for PHP 
+
+	XAMPP - is software package for a web server setup it stands for:
+	X - cross platform Window, OSX, Linux
+	A - Apache
+	M - MySQL/MariaDB
+	P - PHP
+	P - Pearl
+
+	https://www.apachefriends.org/index.html
+
+
+	Setting up the web server
+
+	To setup your webserver:
+
+		1. Start the Apache module from the XAMPP Control Panel
+		2. Place the files you want to share in the htdocs directory in the XAMPP installation diretory
+			a. You may choose to place them in a subdirectory
+
+			(/opt/lampp/xampp)
+
+	Accessing files from another computer
+		To access the files from our webserver,
+
+		1. We need to identify first the IP address of our webserver.
+		2. Open commonand prompt (terminal .bash) and type (ifconfig or ipconfig)
+		3. accessing files from another computer
+		<ip address of webserver> / <subdirectory> / <filename>
+
+
+
+--------------------------------------------
+An example of a Server-Side scripting language is PHP
+	- General Purpose server-side scripting language and interpreter
+	- Recursive acronym for PHP: Hypertext Preprocessor
+	- Used to generate dynamic output in web servers
+
+
+
+	Basic Syntax
+	- by default, PHP documents end with the extension .php
+	- to trigger php commands, use the staring tag <?php and the closing tag ?>
+	- Semicolons - used to end a PHP statement!
+	- comments - comments in PHP are not read or executed as part of the program.
+				- for single-line comments, use <//> (double forward slash)
+					//This is a comment. 
+	- Printing output  - <?php echo "Hello World!"; ?>

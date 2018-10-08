@@ -1,0 +1,68 @@
+* {
+
+}
+
+
+html, body {
+	width: 100%;
+	height: 100%;
+}
+
+.container {
+	height: 100%;
+}
+
+
+.left {
+	width: 15%;
+	float:left;
+}
+
+.color {
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 8px;
+}
+
+.right {
+	float: left;
+	width: 80%;
+}
+
+.box {
+	height: 32%;
+	width: 45%;
+	float: left;
+	border:1px solid black;
+	margin: 2px 2px;
+}
+
+#color-1 {
+	background-color: red;
+}
+#color-2 {
+	background-color: yellow;
+}
+#color-3 {
+	background-color: pink;
+}
+#color-4 {
+	background-color: green;
+}
+#color-5 {
+	background-color: orange;
+}
+#color-6 {
+	background-color: purple;
+}
+#color-7 {
+	background-color: blue;
+}
+
+
+
+
+

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+
+	<title>Leap Year</title>
+</head>
+<body>
+<input id="input" type="number"></input>
+<button onclick="getLeafyear()">Is Leap Year?</button>
+<span id="result"></span>
+
+<script type="text/javascript">
+	
+	const getLeafyear = () => {
+		let y = Number(document.getElementById('input').value);
+		let result1 = y % 4; // it is a leap year
+		let result2 = y % 400; // it is a leap year
+		let result3 = y % 100; // it is NOT a leap year
+		if((result1 == 0) && (result3 != 0)){
+			document.getElementById("result").innerHTML = y + " Leap year";
+		} else if(result2 == 0) {
+			document.getElementById("result").innerHTML = y + " Leap year";
+		} else {
+			document.getElementById("result").innerHTML = y + " NOT Leap year";
+		}
+		
+	}
+
+
+
+
+
+
+</script>
+
+
+</body>
+</html>

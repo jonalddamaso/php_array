@@ -53,9 +53,9 @@ function randomColor()
 {
 let color = '';
 let values = ['a', 'b', 'c', 'd', 'e', 'f', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0'];
-for (c = 0; c < 6; c++) 
+for (i = 0; i < 6; i++) 
 {
-no = Math.floor(Math.random() * 15);
+no = Math.floor(Math.random() * 25);
 color += values[no];
 }
 return color;

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+
+	<title>Student Grades</title>
+</head>
+<body>
+<!-- CP1: 20% CP2: 30% CP3: 40% Portfolio: 5%  Attendance:5%-->
+<!-- 100 to 90 -A -->
+<!-- 89 to 80 -B -->
+<!-- 79 to 70 -C -->
+<!-- 69 to 60 -D -->
+<!-- 59 to 50 - E -->
+<!-- 0 to 49 - F -->
+
+<input id="capstone1"> Capstone1 Grade</input><br>
+<input id="capstone2"> Capstone2 Grade</input><br>
+<input id="capstone3"> Capstone3 Grade</input><br>
+<input id="portfolio"> Portfolio Grade</input><br>
+<input id="attendance"> Attendance Grade</input>
+
+<button onclick="getGrades()">Compute Grades</button> <br>
+<h5>Total Grade:</h5>
+<!-- <textarea id="gradeLabel"></textarea>  -->
+<span id="result"></span> 
+<!-- <textarea id="ratingname"></textarea> -->
+
+<script type="text/javascript">
+	
+	const getGrades = () => {
+
+		// input
+		let gradelabel = document.getElementById("gradeLabel");
+		let rating = document.getElementById("ratingname");
+		let cp1 = Number(document.getElementById('capstone1').value);
+		let cp2 = Number(document.getElementById('capstone2').value);
+		let cp3 = Number(document.getElementById('capstone3').value);
+		let pf = Number(document.getElementById('portfolio').value);
+		let at = Number(document.getElementById('attendance').value);
+		// let gradelabel = "Your Grade is"
+		// let rating = "Rating -A"
+		// let cp1per = cp1 * 0.20;
+		// let cp2per = cp2 * 0.30;
+		// let cp3per = cp3 * 0.40;
+		// let pfper = pf * 0.05;
+		// let atper = at * 0.05;
+		// process
+		let grade = (cp1*0.20)+(cp2*0.30)+(cp3*0.40)+(pf*0.05)+(at*0.05)
+		if(grade >=101){
+			document.getElementById("result").innerHTML = "Invalid input";
+		} else if (grade >= 90) {
+			document.getElementById("result").innerHTML ="Your Grade is "+ grade + "  Rating is - A";
+		} else if (grade >= 80){
+			document.getElementById("result").innerHTML = "Your Grade is "+ grade + "  Rating is - B";
+		} else if (grade >= 70){
+			document.getElementById("result").innerHTML = "Your Grade is "+ grade + "  Rating is - C";
+		} else if (grade >= 60){
+			document.getElementById("result").innerHTML = "Your Grade is "+ grade + "  Rating is- D";
+		} else if (grade >= 50){
+			document.getElementById("result").innerHTML = "Your Grade is "+ grade + "  Rating is - E";
+		} else if (grade <=0){
+			document.getElementById("result").innerHTML = "Invalid input";
+		}else {
+			document.getElementById("result").innerHTML = "Your Grade is "+ grade + "  Rating is - F";
+		}
+		
+	}
+
+
+
+</script>
+
+
+
+
+
+
+
+
+</body>
+</html>
